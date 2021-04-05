@@ -314,6 +314,35 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
+.work-list-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+.work-list-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: auto;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-list-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Наша команда */
 
 .section-team {
