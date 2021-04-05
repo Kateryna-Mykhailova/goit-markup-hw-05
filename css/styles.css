@@ -590,7 +590,28 @@ img {
 .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.projects-link:hover .projects-overlay,
+.projects-link:focus .projects-overlay {
+  opacity: 1;
+}
 
+.projects-link {
+  position: relative;
+}
+.projects-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.projects-overlay-text {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #ffffff;
+}
 .projects-description {
   padding: 20px 24px 20px 24px;
   border-right: 1px solid var(--projects-description-border);
