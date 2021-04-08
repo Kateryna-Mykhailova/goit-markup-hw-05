@@ -611,19 +611,26 @@ img {
 .projects-link:hover .projects-overlay,
 .projects-link:focus .projects-overlay {
   opacity: 1;
+  transform: translateY(-100%);
 }
 
-.projects-link {
+.projects-img {
   position: relative;
+  overflow: hidden;
 }
+/* .projects-link {
+  position: relative;
+} */
 .projects-overlay {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  bottom: -100%;
+  /* top: 0px;
+  left: 0px; */
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transform 250ms cubic-bezier(0.4, 0, 0.2, 1) */
 }
 
 .projects-overlay-text {
