@@ -628,6 +628,7 @@ img {
 
 .projects-overlay {
   position: absolute;
+  height: 100%;
   transform: translateY(0);
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
